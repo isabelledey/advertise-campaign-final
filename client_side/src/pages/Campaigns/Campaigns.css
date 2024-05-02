@@ -59,6 +59,27 @@ button {
   transition: background-color 0.3s;
 }
 
+button:hover {
+  background-color: #4834d4;
+}
+
+.cancelButton {
+  background-color: white;
+  color: #6c5ce7;
+  border: 1px solid #6c5ce7;
+  margin-left: 10px;
+}
+
+.cancelButton:hover {
+  background-color: #6c5ce7;
+  color: white;
+}
+
+.edit-buttons {
+  display: flex;
+  justify-content: center;
+}
+
 .modal {
   display: flex;
   align-items: center;
@@ -95,9 +116,6 @@ input[type="file"] {
   border-radius: 5px;
 }
 
-button:hover {
-  background-color: #4834d4;
-}
 select {
   padding: 10px;
   font-size: 16px;
@@ -105,7 +123,7 @@ select {
   border-radius: 5px;
   background-color: #f8f8f8;
   width: 70%;
-  max-width: 300px; 
+  max-width: 300px;
   box-sizing: border-box;
   margin-bottom: 20px;
 }
