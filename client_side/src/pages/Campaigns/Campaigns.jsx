@@ -209,7 +209,13 @@ export const Campaigns = () => {
                 <td>{camp.name}</td>
                 <td>{camp.platform}</td>
                 <td>{camp.landingPage}</td>
-                <td>{camp.imageUrl}</td>
+                <td>
+                  <img
+                    src={camp.imageUrl}
+                    alt="camp-img"
+                    style={{ width: 40 + "%" }}
+                  />
+                </td>
                 <td>
                   <button onClick={() => handleCampClick(camp)}>Edit</button>
                 </td>
