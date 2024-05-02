@@ -75,11 +75,6 @@ export const Campaigns = () => {
   };
 
   const handleCancel = () => {
-    setName("");
-    setPlatform("");
-    setLandingPage("");
-    setImageUrl("");
-    setSelectedCamp(null);
     closeModal();
   };
 
