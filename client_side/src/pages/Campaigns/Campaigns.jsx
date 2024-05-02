@@ -89,6 +89,11 @@ export const Campaigns = () => {
 
   const closeModal = () => {
     setShowModal(false);
+    setName("");
+    setPlatform("");
+    setLandingPage("");
+    setImageUrl("");
+    setSelectedCamp(null);
   };
 
   const handleAddCampaign = async (e) => {
