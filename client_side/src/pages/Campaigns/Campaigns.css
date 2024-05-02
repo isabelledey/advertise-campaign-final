@@ -1,187 +1,123 @@
-/* Campaigns.css */
-
-.app-container {
-    margin: 20px;
-  }
-  select {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f8f8f8;
-    width: 70%;
-    max-width: 300px; /* Adjust width as needed */
-    box-sizing: border-box;
-    margin-bottom: 20px;
-  }
-  
-  /* Style the options */
-  select option {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #fff;
-    color: #333;
-  }
-  
-  /* Style the selected option */
-  select option:checked {
-    background-color: #007bff; /* Change to your preferred color */
-    color: #fff;
-  }
-  
-  
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #0056b3;
-  }
-  
-  .modal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .modal-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  .close {
-    float: right;
-    cursor: pointer;
-    font-size: 20px;
-  }
-  
-  .close:hover {
-    color: red;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-bottom: 10px;
-  }
-  
-  input[type="text"],
-  input[type="file"] {
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
-
-
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #a18cd1, #fbc2eb);
+}
+
+.container {
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .app-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+  margin-top: 20px;
 }
 
-.note-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.campaign-table {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
 }
 
-.note-form input[type="text"],
-.note-form textarea,
-.note-form button {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    flex: 1 1 auto;
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.note-form button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
-.note-form button:hover {
-    background-color: #0056b3;
+th {
+  background-color: #f5f5f5;
 }
 
-.campaign-table table {
-    width: 100%;
-    border-collapse: collapse;
+td img {
+  max-width: 100px;
+  border-radius: 5px;
 }
 
-.campaign-table th, .campaign-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+button {
+  cursor: pointer;
+  padding: 8px 16px;
+  border: none;
+  background-color: #6c5ce7;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-.campaign-table th {
-    background-color: #f2f2f2;
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Campaigns.css */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
 
+form {
+  display: flex;
+  flex-direction: column;
+}
 
-.edit-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-  }
-  
-  .edit-buttons button {
-    padding: 8px 20px;
-    margin-right: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .edit-buttons button:hover {
-    background-color: #0056b3;
-  }
-  
-  .edit-buttons button:last-child {
-    margin-right: 0;
-  }
-  
+label {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="file"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #4834d4;
+}
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  width: 70%;
+  max-width: 300px; 
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+select option {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+}
+
+select option:checked {
+  background-color: #007bff;
+  color: #fff;
+}
