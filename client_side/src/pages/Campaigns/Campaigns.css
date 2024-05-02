@@ -1,0 +1,187 @@
+/* Campaigns.css */
+
+.app-container {
+    margin: 20px;
+  }
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    width: 70%;
+    max-width: 300px; /* Adjust width as needed */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the options */
+  select option {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Style the selected option */
+  select option:checked {
+    background-color: #007bff; /* Change to your preferred color */
+    color: #fff;
+  }
+  
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .close {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .close:hover {
+    color: red;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="file"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.note-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.note-form input[type="text"],
+.note-form textarea,
+.note-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1 1 auto;
+}
+
+.note-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.note-form button:hover {
+    background-color: #0056b3;
+}
+
+.campaign-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.campaign-table th, .campaign-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.campaign-table th {
+    background-color: #f2f2f2;
+}
+
+/* Campaigns.css */
+
+
+.edit-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .edit-buttons button {
+    padding: 8px 20px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .edit-buttons button:last-child {
+    margin-right: 0;
+  }
+  
