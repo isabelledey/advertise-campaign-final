@@ -181,7 +181,9 @@ export const Campaigns = () => {
               {selectedCamp ? (
                 <div className="edit-buttons">
                   <button type="submit">Save</button>
-                  <button onClick={handleCancel}>Cancel</button>
+                  <button className="cancelButton" onClick={handleCancel}>
+                    Cancel
+                  </button>
                 </div>
               ) : (
                 <button type="submit">Submit</button>
