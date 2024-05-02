@@ -215,7 +215,7 @@ export const Campaigns = () => {
                   <img
                     src={camp.imageUrl}
                     alt="camp-img"
-                    style={{ width: 40 + "%" }}
+                    style={{ width: 100 + "%" }}
                   />
                 </td>
                 <td>
